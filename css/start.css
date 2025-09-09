@@ -1,0 +1,9 @@
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+  color: purple;
+  font-size: 18px;
+  padding: 8px;
+}
