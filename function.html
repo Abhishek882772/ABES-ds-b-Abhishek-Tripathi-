@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-         #adi{
+        /* #adi{
             background-color: blue;
             color: white;
             padding: 80px 80px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-        }
+        } */
     </style>
 </head>
-<body>
+
+<body id="abhi">
+    <button onclick="red()">RED</button>
+    <button onclick="green()">GREEN</button>
+    <button onclick="blue()">BLUE</button>
     <script>
-        function abes(){
-            document.getElementById("adi").innerHTML = "hello abes";
+        function red() {
+            document.getElementById("abhi").style.backgroundColor = "red";
         }
+        function green() {
+            document.getElementById("abhi").style.backgroundColor = "green";
+
+        }
+        function blue() {
+            document.getElementById("abhi").style.backgroundColor = "blue";
+
+        }
+
+        // function abes(){
+        //     document.getElementById("adi").innerHTML = "hello abes";
+        // }
         // function abes(){
         //     document.write("hello abes"+"<br>");
         // }
@@ -33,8 +50,9 @@
         // sub(10,20);
         // add(10,20);
     </script>
-    <div id="adi">
+    <!-- <div id="adi">
     <button onclick="abes()">click</button>
-    </div>
+    </div> -->
 </body>
+
 </html>
