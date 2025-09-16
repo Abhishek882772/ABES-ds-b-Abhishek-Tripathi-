@@ -4,21 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+         #adi{
+            background-color: blue;
+            color: white;
+            padding: 80px 80px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <script>
         function abes(){
-            document.write("hello abes"+"<br>");
+            document.getElementById("adi").innerHTML = "hello abes";
         }
-        function sub(vara, varb){
-            document.write("hello sub - "+(vara-varb)+ "<br>");
-        }
-        function add(a,b){
-            document.write("hello add - "+(a+b) +"<br>");
-        }
-        abes();
-        sub(10,20);
-        add(10,20);
+        // function abes(){
+        //     document.write("hello abes"+"<br>");
+        // }
+        // function sub(vara, varb){
+        //     document.write("hello sub - "+(vara-varb)+ "<br>");
+        // }
+        // function add(a,b){
+        //     document.write("hello add - "+(a+b) +"<br>");
+        // }
+        // abes();
+        // sub(10,20);
+        // add(10,20);
     </script>
+    <div id="adi">
+    <button onclick="abes()">click</button>
+    </div>
 </body>
 </html>
