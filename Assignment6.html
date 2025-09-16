@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Example</title>
+  <style>
+    .newimg {
+      width: 30px;
+      height: 30px;
+      border: 2px solid black;
+      border-radius: 100%;
+      box-shadow: 5px 5px 5px grey;
+    }
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      width: 20vw;
+      gap: 20px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="body">
+    <div>
+      <img class="newimg" src="classproject.jpeg" alt="">
+    </div>
+    <div class="count">0</div>
+    <div class="button">
+      <button onclick="updatesum()">+</button>
+      <button onclick="updatesub()">-</button>
+    </div>
+  </div>
+
+  <script>
+    let count = 0;
+    let countdiv = document.querySelector(".count");
+
+    function updatesum() {
+        if (count >= 10) {
+            alert("Count cannot exceed 10");
+            return; // exit the function if count is 10 or more
+        }
+        else {
+      count++; // increment
+      countdiv.innerHTML = count;
+        }
+    }
+
+    function updatesub() {
+        if (count <= 0) {
+            alert("Count cannot be less than 0");
+            return; // exit the function if count is 0 or less
+        }
+        else {
+      count--; // decrement
+      countdiv.innerHTML = count;
+        }
+    }
+  </script>
+</body>
+</html>
