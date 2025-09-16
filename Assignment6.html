@@ -15,6 +15,9 @@
     }
     .body {
       display: flex;
+    }
+    .body1 {
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -27,7 +30,8 @@
 </head>
 <body>
   <div class="body">
-    <div>
+    <div class="body1">
+    <div class="body2">
       <img class="newimg" src="classproject.jpeg" alt="">
     </div>
     <div class="count">0</div>
@@ -35,19 +39,36 @@
       <button onclick="updatesum()">+</button>
       <button onclick="updatesub()">-</button>
     </div>
+    <button class="body3" onclick="hide()">Hide</button>
+    <div>
+        <button onclick="changeimage()">Change</button>
+    </div>
+  </div>
   </div>
 
   <script>
     let count = 0;
     let countdiv = document.querySelector(".count");
-
+    function changeimage(){
+        document.querySelector(".newimg").src="bus.jpeg";
+    }
+    function hide(){
+        document.querySelector(".body2").style.display="none";
+        document.querySelector(".body3").innerHTML="Show";
+        document.querySelector(".body3").setAttribute("onclick","show()");
+    }
+    function show(){
+        document.querySelector(".body2").style.display="black";
+        document.querySelector(".body3").innerHTML="Hide";
+        document.querySelector(".body3").setAttribute("onclick","hide()");
+    }
     function updatesum() {
         if (count >= 10) {
             alert("Count cannot exceed 10");
-            return; // exit the function if count is 10 or more
+            return;
         }
         else {
-      count++; // increment
+      count++; 
       countdiv.innerHTML = count;
         }
     }
@@ -55,10 +76,10 @@
     function updatesub() {
         if (count <= 0) {
             alert("Count cannot be less than 0");
-            return; // exit the function if count is 0 or less
+            return; 
         }
         else {
-      count--; // decrement
+      count--; 
       countdiv.innerHTML = count;
         }
     }
