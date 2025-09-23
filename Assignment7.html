@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, in"it"ial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="abhi1"></p>
+        <p id="abhi2"></p>
+        <p id="abhi3"></p>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        class Student{
+            constructor(name,year,branch,rollNo){
+                this.name=name;
+                this.year=year;
+                this.branch=branch;
+                this.rollNo=rollNo;
+            }
+        }
+        const Student1=new Student("abhishek",3,"IT",2300321540007);
+        const Student2=new Student("abhi",3,"IT",2300321540008);
+        const Student3=new Student("atul",3,"IT",2300321540009);
+        const Student4=new Student("abhay",3,"CS",2300321540010);
+        const Student5=new Student("aryan",3,"CS",2300321540011);
+        document.getElementById("abhi1").innerHTML=Student1.name;
+    </script>
+</body>
+
+</html>
