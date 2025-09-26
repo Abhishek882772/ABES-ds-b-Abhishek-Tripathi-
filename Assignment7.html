@@ -3,34 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, in"it"ial-scale=1.0">
+    <meta name="viewport" content="width=device-width, in" it"ial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container1 {
+            font-weight: 800;
+            background-color: blueviolet;
+            min-height: 20vh;
+            width: 70vw;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .container2 {
+            background-color: pink;
+            min-height: 20vh;
+            width: 70vw;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container1">
         <p id="abhi1"></p>
         <p id="abhi2"></p>
         <p id="abhi3"></p>
     </div>
-    <div>
-
+    <div class="container2">
+        <p id="abhi4"></p>
+        <p id="abhi5"></p>
     </div>
     <script>
-        class Student{
-            constructor(name,year,branch,rollNo){
-                this.name=name;
-                this.year=year;
-                this.branch=branch;
-                this.rollNo=rollNo;
+        class Branch {
+            constructor(IT,CS) {
+                this.IT = IT;
+                this.CS = CS;
             }
         }
-        const Student1=new Student("abhishek",3,"IT",2300321540007);
-        const Student2=new Student("abhi",3,"IT",2300321540008);
-        const Student3=new Student("atul",3,"IT",2300321540009);
-        const Student4=new Student("abhay",3,"CS",2300321540010);
-        const Student5=new Student("aryan",3,"CS",2300321540011);
-        document.getElementById("abhi1").innerHTML=Student1.name;
+        const Student1 = new Array("abhishek", "3", "IT", "2300321540007");
+        const Student2 = new Array("abhi", "3", "IT", "2300321540008");
+        const Student3 = new Array("atul", "3", "IT", "2300321540009");
+        const Student4 = new Array("abhay", "3", "CS", "2300321540010");
+        const Student5 = new Array("aryan", "3", "CS", "2300321540011");
+        document.getElementById("abhi1").innerHTML = Student1;
+        document.getElementById("abhi2").innerHTML=Student2;
+        document.getElementById("abhi3").innerHTML = Student3;
+        document.getElementById("abhi4").innerHTML = Student4;
+        document.getElementById("abhi5").innerHTML = Student5;
     </script>
 </body>
 
