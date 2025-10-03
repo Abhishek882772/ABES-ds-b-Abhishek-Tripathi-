@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const maths={
+            name:"Agrawal",
+            subject:"maths",
+            author:"john",
+            page:"200"
+        }
+        const  science={
+            name:"Osso",
+            subject:"science",
+            author:"johnny",
+            page:"300"
+        }
+        const english={
+            name:"John snow",
+            subject:"english",
+            author:"john",
+            page:"285"
+        }
+        const ss={
+            name:"arya stack",
+            subject:"ss",
+            author:"arya",
+            page:"550"
+        }
+        const hindi={
+            name:"himanshu",
+            subject:"hindi",
+            author:"hemu",
+            page:"20"
+        }
+        const library={
+            maths,
+            science,
+            english,
+            ss,
+            hindi,
+        }
+const hindibook= library.hindi;
+document.getElementById("demo").innerHTML=`
+Name: ${hindibook.name} <br>
+Subject: ${hindibook.subject} <br>
+Author: ${hindibook.author} <br>
+Page: ${hindibook.page} 
+`;
+    </script>
+</body>
+</html>
