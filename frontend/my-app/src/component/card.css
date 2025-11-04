@@ -1,0 +1,15 @@
+#crt{
+    background-color: rgb(247, 224, 227);
+    color: black;
+    border: 2px solid rgb(255, 6, 48);
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
