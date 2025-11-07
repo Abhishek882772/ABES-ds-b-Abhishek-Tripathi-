@@ -13,12 +13,11 @@ function Book(props) {
       />
       <h1>{props.Bname}</h1>
       <h2>{props.Price}</h2>
-    </div>
-    <div>
-    <button onClick={()=>setCount (count+1)}>+</button>
+      <button onClick={()=>setCount (count+1)}>+</button>
     {count}
     <button onClick={()=>setCount(count-1)}>-</button>
     </div>
+ 
     </>
   );
 }

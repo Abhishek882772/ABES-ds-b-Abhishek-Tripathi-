@@ -12,9 +12,12 @@ function About() {
 function Link1() {
   return (
     <div>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link>
-      </nav>
+      <div>
+        <nav>
+          <Link to="/">Home</Link> |{" "}
+          <Link to="/about">About</Link>
+        </nav>
+      </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
