@@ -1,14 +1,16 @@
-import React from 'react'
-import './navbar.css'
-function navbar() {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Navbar() {
   return (
-    <div id='flex'>
-      <div>Home</div>
-      <div>About</div>
-      <div>contact</div>
-      <div>Email</div>
-    </div>
-  )
+    <nav className="navbar">
+      <h2>MyApp</h2>
+      <div className="nav-links">
+        <Link to="/">Login</Link>
+        <Link to="/register">Register</Link>
+      </div>
+    </nav>
+  );
 }
 
-export default navbar
+export default Navbar;
